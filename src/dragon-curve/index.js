@@ -1,12 +1,14 @@
 export const dragonCurve = n => {
 
   const reverseString = string => {     
-    const result = string.split('');
-    for (let i = 0; i < result.length; i++) {
-      result[i] = (result[i] === '1') ? '0' : '1';
-    }    
-    return result.reverse().join('');
-  };  
+    return string.split('')
+      .map(el => {
+        return el === '1' ? '0' : '1';
+      })  
+      .reverse()
+      .join('');
+  }; 
+  
   let dragonRow = '1';
 
   n -= 1;
