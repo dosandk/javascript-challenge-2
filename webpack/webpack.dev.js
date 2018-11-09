@@ -30,7 +30,7 @@ module.exports = {
           {
             loader: 'css-loader', // translates CSS into CommonJS
             query: {
-              modules: false,
+              modules: true,
               camelCase: true,
               localIdentName: '[name]__[local]___[hash:base64:5]'
             }
