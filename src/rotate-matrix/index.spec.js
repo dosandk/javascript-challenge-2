@@ -1,5 +1,15 @@
-import {rotateMatrix} from './index'
+import {rotateMatrix} from './index';
 
 describe('rotateMatrix::', () => {
-  // need to implement
+  it('should return a rotated matrix', () => {
+    expect(rotateMatrix([[1, 2], [3, 4]])).toEqual([[1, 3], [2, 4]]);
+    expect(
+      rotateMatrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    ).toEqual([[1, 4, 7], [2, 5, 8], [3, 6, 9]]);
+  });
+
+  it('should throw error if passed not a square or empty matrix', () => {
+    expect(rotateMatrix([[],[]])).toEqual(new Error('this is not a square matrix'));
+    expect(rotateMatrix([[1, 2, 3],[1, 2, 3]])).toEqual(new Error('this is not a square matrix'));
+  });
 });
