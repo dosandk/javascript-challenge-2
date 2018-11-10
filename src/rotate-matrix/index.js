@@ -4,7 +4,7 @@ const rotateMatrix = arr => {
       matrixRow.push(current[index]);
       return matrixRow;
     }, []);
-    return result.reverse();
+    return result;
   });
   return matrix;
 };
