@@ -16,6 +16,7 @@ describe('dragonCurve::', () => {
   it('Function returns dragon row with 4 curves', () => {
     expect(dragonCurve(4)).toEqual('110110011100100');
   });
+  
   it('Function returns dragon row with 4 curves', () => {
     expect(dragonCurve(5)).toEqual('1101100111001001110110001100100');
   });
