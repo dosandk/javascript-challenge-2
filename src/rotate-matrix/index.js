@@ -1,6 +1,6 @@
 export const rotateMatrix = arr => {
   if (checkMatrix(arr)){
-    return arr.map((value, i) => value.map((an, j) => arr[j][i]));
+    return arr.map((row, i) => row.map((column, j) => arr[j][i]));
   }
   throw new Error('Not a square matrix');
 };
