@@ -17,9 +17,9 @@ describe('dragonCurve::', () => {
 
   it('Should return random direction Dragon Curve n-th order', () => {
     const result = dragonCurve('', 4);
-    expect(result.length).toEqual(15);
-    expect(/[0-1]{15}/.test(result)).toEqual(true);
+    expect(/^[0-1]{15}$/.test(result)).toEqual(true);
     expect(parseInt(result.slice(0, result.length / 2), 10) + 
-    parseInt(result.slice(result.length / 2 + 1).split('').reverse().join(''), 10)).toEqual(1111111);
+      parseInt(result.slice(result.length / 2 + 1).split('').reverse().join(''), 10)).
+      toEqual(1111111);
   });
 });
