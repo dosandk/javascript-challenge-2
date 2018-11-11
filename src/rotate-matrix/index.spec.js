@@ -1,5 +1,7 @@
-import {rotateMatrix} from './index'
+import {rotateMatrix} from './index';
 
 describe('rotateMatrix::', () => {
-  // need to implement
+  it('lalala', () => {
+    expect(rotateMatrix(1)).toEqual(1);
+  });
 });
