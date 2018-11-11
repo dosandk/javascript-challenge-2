@@ -22,4 +22,10 @@ describe('dragonCurve::', () => {
       parseInt(result.slice(result.length / 2 + 1).split('').reverse().join(''), 10)).
       toEqual(1111111);
   });
+  
+  it('dragonCurve should receive direction parameters as an array', () => {
+    expect(dragonCurve([1,1,1,1], 4)).toEqual('110110011100100');
+    expect(dragonCurve([0,0,0,0], 4)).toEqual('001001100011011');
+    expect(dragonCurve([1,0,0,0], 4)).toEqual('001001110011011');
+  });
 });

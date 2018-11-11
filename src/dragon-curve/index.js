@@ -1,6 +1,7 @@
 export const dragonCurve = (direction, n) => {
   let result = '';
-  
+  const directionIsArray = Array.isArray(direction);
+
   const dragonCurveNext = (direction, dragonCurvePrevious = '') => {
     const dragonCurvePreviousLength = dragonCurvePrevious.length;
     let currentDirection = (direction === '') ? Math.round(Math.random()) : direction;
@@ -16,8 +17,8 @@ export const dragonCurve = (direction, n) => {
   };
 
   for (let i = 0; i < n; i++) {
-    result = dragonCurveNext(direction, result);
+    result = dragonCurveNext(directionIsArray ? direction[i] : direction, result);
   }
-
+    
   return result;  
 };
