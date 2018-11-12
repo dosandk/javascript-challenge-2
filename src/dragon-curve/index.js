@@ -1,3 +1,4 @@
 export const dragonCurve = n => {
-  // logic...
+  n = 5;
+  return n;
 };

@@ -1,4 +1,5 @@
 export const rotateMatrix = arr => {
-  // logic...
+  arr = 5;
+  return arr;
 };
 
