@@ -1,4 +1,4 @@
-import {rotateMatrix} from './index'
+import {rotateMatrix} from './index';
 
 describe('rotateMatrix::', () => {
   it('Should rotate matrix', () => {
