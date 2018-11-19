@@ -1,4 +1,4 @@
-const dragonCurve = n => {
+export const dragonCurve = n => {
   let curve = '1';
   let counter = n;
 
@@ -26,5 +26,3 @@ const dragonCurve = n => {
 
   return getDragonCurve();
 };
-
-module.exports = dragonCurve;

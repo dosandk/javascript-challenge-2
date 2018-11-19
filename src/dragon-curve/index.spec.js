@@ -1,4 +1,4 @@
-const dragonCurve = require('./index');
+import {dragonCurve} from './index';
 
 describe('dragonCurve::', () => {
   it('Shoult return a dragon curve for the number 1', () => {

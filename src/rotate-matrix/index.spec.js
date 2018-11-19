@@ -1,4 +1,4 @@
-const rotateMatrix = require('./index');
+import {rotateMatrix} from './index';
 
 describe('rotateMatrix::', () => {
   it('Should transform an array 2x2 by replacing its values', () => {

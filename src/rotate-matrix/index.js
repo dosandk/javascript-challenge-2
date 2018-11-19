@@ -1,4 +1,4 @@
-const rotateMatrix = arr => {
+export const rotateMatrix = arr => {
   const resultArr = arr.map(() => []);
   
   arr.forEach(outerItem => {
@@ -9,5 +9,3 @@ const rotateMatrix = arr => {
 
   return resultArr;
 };
-
-module.exports = rotateMatrix;
