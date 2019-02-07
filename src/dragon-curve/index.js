@@ -1,3 +1,3 @@
-export const dragonCurve = n => {
+export const dragonCurve = () => {
   // logic...
 };

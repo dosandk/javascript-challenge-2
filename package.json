@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack/webpack.dev.js --open HOST=0.0.0.0",
+    "start": "webpack-dev-server --config ./webpack/webpack.dev.js --open",
     "test": "jest",
     "lint": "eslint ./src",
     "lint:watch": "esw --watch",
