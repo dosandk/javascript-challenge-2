@@ -1,5 +1,4 @@
-import {rotateMatrix} from './index'
-
+// import {rotateMatrix} from './index';
 describe('rotateMatrix::', () => {
   // need to implement
 });
